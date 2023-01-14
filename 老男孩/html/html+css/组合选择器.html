@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*后代选择器*/
+        /*div span{*/
+        /*    color: red;*/
+        /*}*/
+        /*儿子选择器*/
+        /*div>span{*/
+        /*    color: red;*/
+        /*}*/
+        /*毗邻选择器*/
+        div+span{ /*同级别紧挨着下面的第一个*/
+            color: lime;
+        }
+        /*弟弟选择器*/
+        /*div~span{*/
+        /*    color: yellow;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<span>span2</span>
+<span>span2</span>
+<div>div
+    <p>div.p1</p>
+    <p>div.p2
+        <span>div.p2.span</span>
+    </p>
+    <span>div.span1</span>
+    <span>div.span2</span>
+</div>
+<span>span</span>
+<span>span</span>
+</body>
+</html>

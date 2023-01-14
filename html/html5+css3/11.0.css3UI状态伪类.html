@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            /* background-color: rebeccapurple; */
+        }
+        input:disabled{
+            background-color: yellow;
+        }
+        /*焦点会匹配此选择器*/
+        input:focus{
+            background-color: blue;
+        }
+        input[type=checkbox]{
+            /*去掉默认样式*/
+            appearance:none;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+        input:checked{
+            background-color: red;
+        }
+        div::selection{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        用户名<input type="text" name="username" ><br>
+        密码<input type="password" name="password" ><br>
+        记住用户名<input type="checkbox"><br>
+        <input type="submit" disabled>
+
+    </form>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt dolorem reprehenderit beatae magni, quas numquam accusantium optio explicabo corrupti aspernatur, fugiat, id repudiandae. Corrupti maiores recusandae eos ex placeat molestiae.</div>
+</body>
+</html>

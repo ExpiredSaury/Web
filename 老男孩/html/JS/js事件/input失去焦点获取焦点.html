@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="hello" id="d1">
+
+
+<script>
+
+
+    let iELe = document.getElementById('d1')
+    //获取焦点
+    iELe.onfocus = function () {
+        //将Input框内部的文本去除
+        iELe.value = ''
+    }
+    //失去焦点
+    iELe.onblur = function () {
+        //给input标签重新赋值
+        iELe.value = '人间清醒'
+    }
+</script>
+</body>
+</html>

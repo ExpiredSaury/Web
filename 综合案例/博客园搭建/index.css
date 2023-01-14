@@ -1,0 +1,93 @@
+/*博客园首页样式文件*/
+
+/*通用样式*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+/*左侧样式*/
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.avatar img{
+    max-width: 100%;
+}
+.blog-title,.blog-info{
+    color:darkcyan;
+    font-size: 15px;
+    text-align: center;
+
+}
+.blog-link ,.blog-tag{
+    font-size: 18px;
+}
+.blog-link a,.blog-tag a{
+    color: darkgray;
+}
+.blog-link a:hover,.blog-tag a:hover{
+    color: white;
+}
+
+.blog-link ul,.blog-tag ul{
+    text-align: center;
+    margin-top: 80px;
+}
+.blog-left{
+    width: 20%;
+    height: 100%;
+    background: #4e4e4e;
+    float: left;
+    position: fixed;
+}
+
+/*右侧样式*/
+.blog-right{
+    width: 80%;
+    height: 100%;
+    background: slategrey;
+    float: right;;
+}
+.article{
+    background-color:white;
+    margin: 20px 40px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(111, 108, 108, 0.5);
+}
+.title{
+    font-size: 25px;
+}
+.date{
+    float: right;
+    margin: 20px 20px;
+    font-weight: bold;
+}
+.article-title{
+    border-left: 5px solid #4e4e4e;
+    text-indent: 1em;
+}
+.article-body{
+    font-size: 18px;
+    text-indent: 25px;
+    border-bottom:1px solid #4e4e4e;
+}
+.article-bottom{
+    font-size: 15px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.article-title a:hover{
+    color: #4e4e4e;
+}

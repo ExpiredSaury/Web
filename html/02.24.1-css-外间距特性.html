@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lightly-HTML-Project</title>
+  <style>
+    /*
+    1.从子的margin-top===》父的padding-top，注意高度计算
+    2.给父盒子设置边框
+    3.加浮动
+    4.overflow:hidden 
+    */
+    .contain {
+      width: 500px;
+      height: 500px;
+      background-color: yellow;
+      /*  padding-top:100px;*/
+      border: 1px solid transparent;
+      
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>

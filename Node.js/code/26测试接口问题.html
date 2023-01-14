@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <button id="get">Get</button>
+    <button id="post">Post</button>
+
+    <script>
+        $(function(){
+            //1测试get接口
+            $('#get').on('click',function(){
+                $.ajax({
+                    url:'http://127.0.0.1:888/api/get',
+                    type:'GET',
+                    data:{name:'zs',age:18},
+                    success:function(res){
+                            console.log(res);
+                    }
+                })
+            })
+            //2.测试Post接口
+            $('#post').on('click',function(){
+                $.ajax({
+                    url:'http://127.0.0.1:888/api/post',
+                    type:'POST',
+                    data:{bookname:'西游记',author:'吴承恩'},
+                    success:function(res){
+                            console.log(res);
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

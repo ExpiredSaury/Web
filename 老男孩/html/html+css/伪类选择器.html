@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a:link { /*访问之前的状态*/
+            color: red;
+        }
+
+        a:hover {
+            color: blue; /*鼠标悬浮态*/
+        }
+
+        a:active {
+            color: black; /*鼠标点击不松开的状态   激活态*/
+        }
+
+        a:visited {
+            color: darkgreen; /*访问之后的状态*/
+        }
+
+        p {
+            color: lime;
+            font-size: 20px;
+        }
+
+        p:hover {
+            color: #5bc0de;
+        }
+
+        input:focus { /*input框获取焦点  （鼠标点击了input框)*/
+            background-color: mintcream;
+        }
+
+    </style>
+</head>
+<body>
+<a href="https://blog.csdn.net/">拉钩网</a>
+<p>点我</p>
+<input type="text">
+</body>
+</html>

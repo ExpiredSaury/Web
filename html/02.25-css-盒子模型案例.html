@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lightly-HTML-Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      display: block;
+    }
+
+    #box {
+      width: 241px;
+      /*263-22*/
+      height: 335px;
+      /*364-11-18*/
+     /*background-color: tomato;*/
+      margin: 0 auto;
+      /*大盒子居中显示*/
+      padding: 11px 11px 18px;
+      /*设置内边距*/
+
+    }
+
+    .title {
+      width: 235px;
+      /*241减去左边距和边框-4-2=235*/
+      height: 19px;
+     /* background-color: #254282;*/
+      padding-left: 4px;
+      border-left: 2px solid #254282;
+      line-height: 19px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    .bigPic{
+      width:241px;
+      height: 170px;
+      margin-bottom: 16px;
+    }
+
+    .bigPic p{
+      width: 241px;
+      height: 26px;
+      background:#f6f7f8;
+      font-size: 12px;
+      text-align: center;
+      line-height:26px;
+    }
+    .smallPic{
+      width: 241px;
+      height: 120px;
+      background-size: 100px 100px;
+    }
+    .samllPic p{
+      font-size: 12px;
+      width:112px;
+      background:#f6f7f8;
+    }
+    .left{
+      float: left;
+    }
+    .right{
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div class="title">
+      <p>女人图片</p>
+    </div>
+    <div class="bigPic">
+      <img src="IMG/" alt="加载失败">
+      <p>大姐利用异业联盟经营美容院</p>
+    </div>
+    <div class="smallPic">
+      <div class="left">
+        <img src="IMG/smallPic1.jpg" alt="">
+        <p>无效化妆，无效穿搭，容貌焦虑</p>
+      </div>
+      <div class="right">
+        <img src="IMG/smallPic2.jpg" alt="">
+        <p>小个子不要怕，高人一等的穿搭</p>
+      </div>
+   
+    </div>
+
+  </div>
+</body>
+
+</html>

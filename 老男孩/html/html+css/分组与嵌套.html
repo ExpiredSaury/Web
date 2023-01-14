@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div,span,p{   /*逗号表示并列关系*/
+            color: tomato;
+        }
+     #d1,.c1,span {
+
+         color: greenyellow;
+     }
+       #d1 .c2{
+           color: lime;
+       }
+    </style>
+</head>
+<body>
+<div id="d1">div
+    <p class="c2">div>p
+        <span id="d3">div>p>span</span>
+        <span id="d4">div>p>span</span>
+    </p>
+    </div>
+<p class="c1">p</p>
+<span>span</span>
+
+</body>
+</html>

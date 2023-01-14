@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="d1" style="display: block;width: 100px;height: 50px;">
+
+<button id="d2">开始</button>
+<button id="d3">结束</button>
+
+<script>
+    let t = null
+    let iEle = document.getElementById('d1')
+    let startBtnELe = document.getElementById('d2')
+    let endBtnEle = document.getElementById('d3')
+
+    // 1. 访问页面之后，将访问时间展示到Unpuy框中
+    // 2. 动态展示当前时间
+    // 3.页面上加两个按钮 （开始，结束）
+    function showTime() {
+        let currentTime = new Date()
+        iEle.value = currentTime.toLocaleString()
+    }
+
+    // showTime()
+    // setInterval(showTime, 1000)
+    startBtnELe.onclick = function () {
+
+        if(!t){
+            t = setInterval(showTime, 1000)
+        }
+
+    }
+    endBtnEle.onclick = function () {
+        clearInterval(t)
+        t=null
+
+
+    }
+</script>
+</body>
+</html>

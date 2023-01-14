@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(){
+            alert(123)
+        }
+        let t = setTimeout(fun1,3000)  //毫秒为单位，3秒后自动执行fun1函数
+        clearTimeout(t)  //取消定时任务，如果要清楚定时任务，需要提前用变量指代定时任务
+
+        function fun2(){
+            alert(123)
+        }
+        function show(){
+            let t = setInterval(fun2,3000) //每隔三秒弹出一次
+            function inner(){
+                clearInterval(t)  //清除定时器
+            }
+            setTimeout(inner,9000)  //9秒后触发
+        }
+        show()
+       
+        
+    </script>
+</body>
+</html>

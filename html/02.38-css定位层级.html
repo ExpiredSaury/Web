@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: yellow;
+            position: relative;
+            left: 100px;
+            top:100px;
+            z-index: 1;/*层级*/
+        }
+        .box2{
+            background-color: red;
+            position: relative;
+            z-index: 100;
+        }
+        /* z-index值越大，层级就越大，越靠上显示 可以设置负值 */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+ 
+</body>
+</html>

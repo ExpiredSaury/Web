@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Lightly-HTML-Project</title>
+      <style>
+        ul{
+          list-style-type: square;
+          /*disc 实心圆
+          circel空心圆
+          square实心正方块*/
+       
+        }
+        
+        .li2{
+          list-style-image: url(IMG/2.jpg);
+        }
+        .li1{
+          list-style-image: url(IMG/1.jpg);
+        }
+        .li3{
+          list-style-image: url(IMG/3.jpg);
+       }
+       li{
+         border:1px solid red ;
+
+         list-style-position: inside;
+       }
+       .box{
+         list-style: none url(IMG/1.jpg) inside;
+       }/*复合属性，位置可以随便改变*/
+      </style>
+  </head>
+  <body>
+      <ul>
+        <li class="li1">1111</li>
+        <li class="li2">2222</li>
+        <li class="li3">3333</li>
+      </ul>
+      <ul class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jQuery-3.6.0-min.js"></script>
+</head>
+<body>
+    <form action="">
+        <span id="d1" style="color: red;"></span>
+        <input type="submit" id="d2">
+    </form>
+
+    <script>
+        $('#d2').click(function(e){
+            $('#d1').text('晚上好！')
+            //阻止标签后续时间的执行  方式1
+            //return false
+            //阻止标签后续时间的执行  方式2
+            e.preventDefault()
+
+        })
+    </script>
+</body>
+</html>

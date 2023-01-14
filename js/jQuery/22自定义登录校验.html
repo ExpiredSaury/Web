@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jQuery-3.6.0-min.js"></script>
+</head>
+<body>
+    <P>username:
+        <input type="text" id="username">
+        <span style="color: red;"></span>
+    </P>
+    <P>password:
+        <input type="text" id="password">
+        <span style="color: red;"></span>
+    </P>
+    <button id="d1">提交</button>
+
+
+    <script>
+        let $userName = $('#username')
+        let $passWord =$('#password')
+        $('#d1').click(function(){
+            //获取用户输入的用户名和密码，做校验.
+            let userName = $userName.val()
+            let passWord =$passWord.val()
+            if (!userName){
+                $userName.next().text('用户名不能为空')
+            }
+            if (!passWord){
+                $passWord.next().text('密码不能为空')
+            }
+        })
+        $('input').focus(function(){
+            $(this).next().text('')
+        })
+    </script>
+</body>
+</html>

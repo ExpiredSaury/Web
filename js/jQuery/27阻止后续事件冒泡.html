@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jQuery-3.6.0-min.js"></script>
+
+</head>
+<body>
+    <div id="d1">div
+        <p id="d1">p
+            <span id="d3">span </span>
+        </p>
+    </div>
+
+    <script>
+        $('#d1').click(function(){
+            alert('div')
+        })
+        $('#d2').click(function(){
+            alert('p')
+            return false
+        })
+        $('#d3').click(function(e){
+            alert('span')
+            //阻止事件冒泡的方式1
+            //return false
+            //阻止事件冒泡的方式2
+            e.stopPropagation()
+
+        })
+    </script>
+</body>
+</html>

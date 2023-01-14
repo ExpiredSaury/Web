@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jQuery-3.6.0-min.js"></script>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 1px solid blue;
+           
+        }
+    </style>
+</head>
+<body>
+    <button id="d1">倚天剑，点击传送</button>
+
+
+
+    <script>
+        $('#d1').on('click',function(){
+            // console.log(this);  //this指代的永远是当前被操作的标签对象
+            // $(this).clone().insertAfter($('body')) //clone默认只克隆html和css，不克隆事件
+            $(this).clone(true).insertAfter($('body')) //括号里面 加参数true即可
+        })
+    </script>
+</body>
+</html>

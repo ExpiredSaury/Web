@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- -等待页面加载完毕后再执行----->
+    <script>
+        window.onload=function(){
+             //第一种绑定事件方式
+        function fun1(){
+            alert(1231)
+        }
+        //第二种
+        let btnEle =document.getElementById('d1');
+        btnEle.onclick=function(){
+            alert(222)
+        }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fun1()">点击</button>
+    <button id="d1">点击</button>
+    <script>
+        //第一种绑定事件方式
+        function fun1(){
+            alert(1231)
+        }
+        //第二种
+        let btnEle =document.getElementById('d1');
+        btnEle.onclick=function(){
+            alert(222)
+        }
+    </script>
+</body>
+</html>

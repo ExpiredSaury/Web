@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!---<script src="../jQuery-3.6.0-min.js"></script>--->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #d1 {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<button id="d1">屠龙宝刀</button>
+
+<script>
+    $('#d1').on('click', function () {
+        // console.log(this)
+        $(this).clone(true).insertAfter($('body'))
+    })
+</script>
+</body>
+</html>

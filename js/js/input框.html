@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="您好" id="d1">
+
+    <script>
+        let inEle=document.getElementById('d1');
+        //获取焦点事件
+        inEle.onfocus=function(){
+            //将input框内部的文本去除
+            inEle.value=''
+            // 点value就是获取，等号赋值是设置
+
+        }
+        //失去焦点事件
+        inEle.onblur=function(){
+            //给input标签重新赋值
+            inEle.value ='不好'
+        }
+    </script>
+</body>
+</html>

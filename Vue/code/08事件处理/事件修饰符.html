@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h2>Hello {{name}} !!!</h2>
+        <button v-on:click="showInfo1">Click Me1!</button>
+        <button @click="showInfo2(66,$event)">Click Me2!</button>
+
+    </div>
+
+    <script>
+        Vue.config.productionTip = false;
+        new Vue({
+            el:'#root',
+            data:{
+                name:'Vue'
+            },
+            methods:{
+                showInfo1(event){
+                    alert('Hello Vue1!!!')
+                    // console.log(event.target.innerText);
+                    // console.log(this); //此处是vm,
+                },
+                showInfo2(number,event){
+                    alert('Hello Vue2!!!')
+                    console.log(number,event);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

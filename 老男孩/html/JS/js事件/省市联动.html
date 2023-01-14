@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="d1">
+    <option value="" selected disabled>--请选择--</option>
+</select>
+<select id="d2"></select>
+
+
+<script>
+    let proEle = document.getElementById('d1')
+    let cityEle = document.getElementById('d2')
+    //数据模拟
+    data = {
+        '河北省': ['衡水', '邯郸', '唐山'],
+        '北京': ['东城区', '朝阳区'],
+        '山东': ['青岛市', '潍坊市'],
+        '上海': ['浦东新区', '黄浦区'],
+        '深圳': ['南山区', '宝安区', '福田区']
+    };
+    //先for循环获取省
+    for (let key in data) {
+        // console.log(data[key])
+        //将省信息做成一个个option标签，添加到第一个select 框中
+        let opEle = document.createElement('option')
+        //设置文本
+        opEle.innerText = key
+        //设置value
+        opEle.value = key
+        //将创建好的option标签添加到第一个select 中
+        proEle.appendChild(opEle)
+
+    }
+
+    //文本域变化事件，change事件
+    proEle.onchange = function () {
+        // alert(123)
+        let currentPro = proEle.value
+        //获取对应的市信息
+        let currentCityList = data[currentPro]
+        cityEle.innerHTML = ''
+
+
+        //for循环所有的市渲染到第二个select 中
+        for (let i = 0; i < currentCityList.length; i++) {
+            let currentCity = currentCityList[i]
+            let opEle = document.createElement('option')
+            //设置文本
+            opEle.innerText = currentCity
+            //设置value
+            opEle.value = currentCity
+            //将创建好的option标签添加到第一个select 中
+            cityEle.appendChild(opEle)
+
+        }
+
+    }
+</script>
+</body>
+</html>

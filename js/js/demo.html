@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var name;
+        // name='zhao';
+        // // alert(name);
+        // console.log(name)
+        // var name = prompt("请输入姓名：")
+        // alert(name)
+        // var a1=12;
+        // var a2=22;
+        // var a3;
+        // a3=a1;
+        // a1=a2;
+        // a2=a3;
+        // console.log(a1,a2);
+        // alert(Number.MAX_VALUE);
+        // alert(Number.MIN_VALUE);
+        //         var age = prompt('请输入年龄');
+        // var str = '今年'+ age + '岁了';
+        // alert(str);
+        //         console.log('zhao'+12);
+        //         alert('alkfja安都泛滥了地方奥利弗就啊\"fafa\"faljaf\nfadk我发卡号奥利弗和');
+        // console.log(parseInt('123px'));//截取到123
+        // console.log(parseInt('12.2'))//取整
+        // console.log(parseFloat('12.002'));
+        // console.log(Number('123.15'));
+        // console.log(parseFloat("132.21px"));
+        // console.log('12'-0);
+        // console.log('123'-'120');
+        // var year=prompt("输入年份：")
+        // var age=2022-parseInt(year);
+        // alert('您的年龄是' + age +'岁');
+        // var num1 = prompt('请输入第一个数字：');
+        // var num3 = prompt('请输入第二个数字：');
+        // alert(parseInt(num1)+parseInt(num3));
+        // var name=prompt("请输入姓名：");
+        // var age=prompt('请输入年龄：');
+        // var sex=prompt('请输入性别：');
+        // alert('您的姓名是：'+name+'\n'+'您的年龄是：'+age+'\n'+'您的性别是：'+sex);
+
+        // var age  =prompt("请输入年龄：")
+        // if(parseInt(age)>=18){
+        //     alert('可以进入网吧')
+        // }
+        // var year= prompt('请输入年份：')
+        // if(year%4==0 && year%100!=0  || year%400==0){
+        //     alert('您输入的年份是闰年')
+        // }else{
+        //     alert('您输入的年份不是闰年')
+        // }
+        // var grade = prompt('请输入成绩：')
+        // if(grade >=90){
+        //     alert('A');
+        // }else if(grade >=80){
+        //     alert('B');
+        // }else if(grade >=70){
+        //     alert('C');
+        // }else if(grade>=60){
+        //     alert('D');
+        // }else{
+        //     alert('E')
+        // }
+        //         var age=10;
+        // var result = age>12? 'No' :'Yes';
+        // console.log(result);
+
+        // var time=prompt('请输入0-59的一个数字')
+        // var result= time<10 ? '0' + time : time;
+        // console.log(result)
+        // switch (2){
+        //     case 1:
+        //         console.log('这是1');break;
+        //     case 2:
+        //         console.log('这是2');break;
+        //     case 3:
+        //         console.log('这是3');break;
+        //     default:
+        //         console.log('没有匹配到结果')
+        // }
+
+        // var fruilt = prompt('请输入一个水果名字：');
+        // switch( fruilt){
+        //     case '橘子':
+        //         alert('3.5/斤');
+        //         break;
+        //     case '苹果':
+        //         alert('2.8/斤');
+        //         break;
+        //     case '榴莲':
+        //         alert('10/斤');
+        //         break;
+        //     case '桃子':
+        //         alert('5.1/斤');
+        //         break;
+        //     default:
+        //         alert('没有'+fruilt +'这个水果');
+        // }
+        // var sum=0;
+        // for(var i =1;i<=100;i++){
+        //     sum+=i;
+        // }
+        // alert(sum);
+        // var sum=0;
+        // var average=0;
+        // for (var i =1; i<=100;i++){
+        //     sum+=i;
+        // }
+        // average=sum/100;
+        // alert(average);
+
+        // var sum_a=0;
+        // var sum_b=0;
+        // for(var i =1;i<=100;i++){
+        //     if(i%2==0){
+        //         sum_a+=i;
+        //     }else{
+        //         sum_b+=i;
+        //     }  
+        // }
+        // alert('偶数和：'+sum_a);
+        // alert('奇数和：'+sum_b);
+        // var sum=0;
+        // for(var i =1;i<=100;i++){
+        //     if(i%3==0){
+        //         sum+=i;
+        //     } 
+        // }
+        // alert('被3整除的和'+sum)
+        // var sum=0;
+
+        // var numbers=prompt('班级总人数：')
+        // for (var i =1;i<=numbers;i++){
+        //     var stu =prompt('第'+i+'个学生成绩为');
+        //      var score=parseFloat(stu);
+        //     sum+=score;
+        // }
+        // alert('总成绩为：'+sum);
+        // alert('平均成绩为：'+ sum/numbers);
+        // var heart='';
+        // for(var i =0; i<5;i++){
+        //     heart=heart +'♥';
+        // }
+        // console.log(heart);
+        // var str='';
+        // for(var i=1;i<=5;i++){
+        //     for(var j=1;j<=5;j++){
+        //         str=str+'♥';
+
+        //     }
+        //     str+='\n'
+        // }
+        // console.log(str);
+        // var str='';
+        // for(var i=1;i<=10;i++){
+        //     for(var j=10;j>=i;j--){
+        //         str=str+'⭐';
+        //     }
+        //     str=str+'\n';
+        // }
+        // console.log(str);
+        // var str='';
+        // for(var i=1;i<=10;i++){
+        //     for(var j=i;j<=10;j++){
+        //         str+='⭐';
+        //     }
+        //     str+='\n';
+        // }
+        // console.log(str);
+        // var str='';
+        // for(var i=1;i<=10;i++){
+        //     for(var j=10;j<=i;j--){
+        //         str+='⭐';
+        //     }
+        //     str+='\n';
+        // }
+        // console.log(str);
+        // var str='';
+        // for(var i =1;i<10;i++){
+        //     for(var j=1;j<=i;j++){
+
+        //         str+=j +'x'+i+'='+i*j;
+        //         str+='\t';
+
+        //     }
+        //     str+='\n';
+        // }
+        // console.log(str);
+        // var i=1;
+        // while(i<=100){
+        //     //循环体
+        //     console.log(i);
+        //     i++;
+        // }
+        // var sum=0;
+        // var j=1;
+        // while(j<=100){
+        //     sum+=j;
+        //     j++
+        // }
+        // console.log(sum);
+        // var  message=prompt('你爱我吗?');
+        // while(message !== '我爱你'){
+        //     message=prompt('你爱我吗？');
+        // }
+        // alert('我也爱你♥');
+        // var i=1;
+        // do{
+        //     console.log('今年'+i+'岁了');
+        //     i++;
+        // }while(i<=100)
+        // do{
+        //     var mes=prompt('你爱我吗？');
+        // }while(mes!=='我爱你')
+        // alert('我也爱你♥')
+        // var sum=0;
+        // for(var i=1;i<=100;i++){
+        //     if(i%7==0){
+        //         continue;
+        //     }
+        //     sum+=i;
+        // }
+        // console.log(sum);
+        // var arr = [1,2,15,45,'zhangsan'];
+        // for (var i=0;i<arr.length;i++){
+        //     console.log(arr[i]);
+        // }
+        // console.log(arr.length)
+        // var sum=0;
+        // var arr = [2.6,1.7,4];
+        // for (var i=0;i<arr.length;i++){
+        //     sum+=arr[i];
+        // }
+        // console.log(sum);
+        // console.log(sum/arr.length);
+        // var arr =[20,2,54,5461,121,1,3,13,456,4,970];
+        // var max=arr[0];
+        // for (var i=1;i<arr.length;i++){
+        //     if (arr[i]>max){
+        //         max=arr[i];
+        //     }
+        // }
+        // console.log(max);
+        // var arr =['zhao','lisi','yiming','haihong','xuan'];
+        // var str='';
+        // for (var i=0;i<arr.length;i++){
+        //     str+=arr[i];
+        //     str+='|';
+        // }
+        // console.log(str);
+        // var arr=['red',1,2];
+        // arr[3]='hello';
+        // console.log(arr);
+        // arr[4]='world';
+        // console.log(arr.length);
+        // var arr=[];
+        // for (var i=0;i<10;i++){
+        //      arr[i]=i+1;
+        // }
+        // console.log(arr);
+        // var arr=[2,12,1210,31,45,12,10,200,5];
+        // var j=0;
+        // var newArr=[];
+        // for (var i=0;i<arr.length;i++){
+        //     if (arr[i]>=10){
+        //         //新数组下标应该从0开始，。依次递增
+        //         newArr[j]=arr[i];
+        //         j++;
+        //     }
+        // }
+        // console.log(newArr);
+        // var arr = [2, 0, 3, 45, 461, 2, 3, 0, 0, 25, 7];
+        // var newArry = [];
+        // for (var i = 0; i < arr.length; i++) {
+        //     if (arr[i] != 0) {
+        //         newArry[newArry.length] = arr[i];
+        //     }
+        // }
+        // var arr=[1,32,121,0,1214,'dog'];
+        // var newArry=[];
+        // for (var i= arr.length-1; i>=0;i--){
+        //     newArry[newArry.length]=arr[i]
+        // }
+        // console.log(newArry);
+        // var arr = [5, 4, 3, 2, 1];
+        // for (var i = 0; i <= arr.length - 1; i++) {  //外层循环管趟数
+        //     for (var j = 0; j < arr.length - i - 1; j++) {//里层循环管每趟交换的次数
+        //         if (arr[j] > arr[j + 1]) {
+        //             var temp = arr[j];
+        //             arr[j] = arr[j + 1];
+        //             arr[j + 1] = temp;
+
+        //         }
+        //     }
+
+        // }
+        //  //函数声明
+        //  function getSum(){
+        //     var sum=0;
+        //     for(var i=0;i<=100;i++){
+        //         sum+=i;
+        //     }
+        //     console.log(sum);
+        //  }
+        //  //调用函数
+        //  getSum();
+        // function getSum(num1,num2){
+        //     console.log(num1+num2);
+        // }
+        // getSum(1,2);
+        // function getSum(){
+        //     console.log(arguments);  //里面存储了所有传递过来的实参
+        //     console.log(arguments.length);
+        //     console.log(arguments[1]);
+        // }
+        // getSum(1,2);
+        // function getMax(){
+        //     var max=arguments[0];
+        //     for (var i=1;i<arguments.length;i++){
+        //         if (arguments[i]>max){
+        //             max=arguments[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // console.log(getMax(1,2,3));
+        // console.log(getMax(1,2,3,4564,456411));
+        // console.log(getMax(101215,15141,11));
+        // function backDay() {
+        //     var year = prompt('请输入年份：')
+        //     if (isRunyear(year)) {
+        //         alert('当前年份是闰年，2月份有29天');
+        //     } else {
+        //         alert('当前年份是闰年，2月份有29天');
+        //     }
+        // }
+
+
+        // function isRunyear() {
+        //     var flag = false;
+        //     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        //         flage = true;
+        //     }
+        //     return flag;
+        // }
+        // var a=1;
+        // function fn1(){
+        //     var a=2;
+        //     var b='22';
+        //     fn2();
+        //     function fn2(){
+        //         var a=3;
+        //         fn2();
+        //         function fn3(){
+        //             var a=4;
+        //             console.log(a);//4
+        //             console.log(b);//'22'
+        //         }
+        //     }
+        // }
+        // fn();
+        // function fn(){
+        //     console.log(11);
+        // } 
+
+        /*相当于
+        function fn(){
+            console.log(11);
+        }
+        fn()
+        */
+        //    function 构造函数名(){
+        //     this.属性=值;
+        //     this.方法=function(){}
+        //    }
+        //    new 构造函数名();
+        // function Star(name, age, sex) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.sex = sex;
+        // }
+        // var result=new Star('黎明', 45, '男');//调用函数返回的是一个对象
+        // // console.log(typeof result);
+        // console.log(result.name);
+        // console.log(resulr.sex);
+        // var result1=new Star('张学友',50,'男');
+        // console.log(result1.name);
+        // console.log(resulr1.age);
+        // for (var key in obj){
+        //     console.log(key); //输出属性名
+        //     console.log(obj[key]);//输出属性值
+        // }
+        // console.log(Math.PI);//圆周率
+        // console.log(Math.max(1,88,99));//最大值
+        // console.log(Math.max());//-infinity -的无穷大
+        // console.log(Math.max(1,2,55,'lisi')); //NaN
+        // var myMath={
+        //     PI:3.141592653,
+        //     max:function(){
+        //         var max=arguments[0];
+        //         for (var i =1;i<arguments.length;i++){
+        //             if(arguments[i]>max){
+        //                 max=arguments[i];
+        //             }
+        //         }
+        //         return max;
+        //     },
+        //     min:function(){
+        //         var min=arguments[0];
+        //         for (var i =1;i<arguments.length;i++){
+        //             if(arguments[i]<min){
+        //                 min=arguments[i];
+        //             }
+        //         }
+        //         return min;
+        //     }
+
+        // }
+        // //绝对值方法
+        // console.log(myMath.PI,myMath.max(1,88,99));
+        // console.log(Math.abs(-1));
+        // console.log(Math.abs('-1'));//隐式转换，会把字符串型-1转成数字型
+        // console.log(Math.abs('lisi'));//NaN
+
+        // //三个取整方法
+        // //1.Math.floor 向下取整，往最小了取整
+        // console.log(Math.floor(1.1));//1
+        // console.log(Math.floor(1.9));//1
+        // //2.Math.ceil 向上取整，往最大了取整
+        // console.log(Math.ceil(1.1));//2
+        // console.log(Math.ceil(1.9));//2
+        // //3.四舍五入 Math.round()
+        // console.log(Math.round(1.1));//1
+        // console.log(Math.round(1.5));//2
+        // console.log(Math.round(1.9));//2
+        // console.log(Math.round(-1.1));//-1
+
+        //猜数字
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" value="提交" onclick="alert('你好啊')"> -->
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jQuery-3.6.0-min.js"></script>
+</head>
+<body>
+    <button>兄弟</button>
+
+    <script>
+        //给页面上所有的button 标签绑定点击事件
+        // $('button').click(function(){  //无法影响到动态创建的标签
+        //     alert(12)
+        // })
+        
+        //事件委托
+        $('body').on('click','button',function(){
+            alert(123)  //将body里所有的点击事件交给的button按钮触发
+        }) //在指定的范围内，将事件委托给某个标签，无论该标签是事先写好的还是后面动态创建的
+    </script>
+</body>
+</html>

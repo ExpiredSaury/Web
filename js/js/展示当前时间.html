@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="d1" style="display: block; height: 40px;width: 200px">
+    <button id="d2">开始</button>
+    <button id="d3">结束</button>
+
+
+
+    <script>
+        //定义一个全局变量
+        let t=null;
+        let inputELe = document.getElementById('d1')
+        let startBtnEle = document.getElementById('d2')
+        let endtBtnEle = document.getElementById('d3')
+        //1.访问页面之后将访问的时间添加到input框中
+        //2.动态展示当前时间
+        //页面上加两个按钮。一个开始，一个结束。
+        function showTime() {
+            let currentTime = new Date();
+            inputELe.value = currentTime.toLocaleString()
+
+        }
+        // showTime()
+        // setInterval(showTime,1000)
+        startBtnEle.onclick = function () {
+            //限制定时器只能开一个
+            if(!t){
+                t=setInterval(showTime, 1000)  //每点击一次就会开设一个定时器，而t只指代最会一个
+            }
+        }
+        endtBtnEle.onclick = function () {
+            clearInterval(t)
+            //清楚定时器的时候，因该把t重置为空
+            t=null
+        }
+    </script>
+</body>
+
+</html>

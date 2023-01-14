@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [class]{
+            background-color: yellow;
+        } */
+        /* div下所有的class */
+        div[class]{
+            background-color: blue;
+        }
+        p[class]{
+            background-color: rebeccapurple;
+        }
+        /*完全匹配*/
+        /* div[class=box1]{
+            border: 1px solid pink;
+        } */
+        /*包含就匹配*/
+        div[class~=box1]{
+            border: 1px solid pink;
+        }
+        input[name]{
+            background-color: yellow;
+        }
+        input[type=email]{
+            background-color: aqua;
+        }
+        /* 模糊匹配 */
+        /* class^=b 以b开头
+        class$=b 以b结尾的
+        class*=b 包含某个字符 */
+        div[class^='b'],p[class*='1']{
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">div11111</div>
+    <div class="box2">div2222222222222</div>
+    <div >333333</div>
+    <div class="box1 box3"> div555555  </div>
+    <p class="p1">p-1111</p>
+    <p class="p2">p-222222</p>
+    <p>p-33363333</p>
+    <div>
+        用户名：<input type="text" name="username"><br>
+        密码:<input type="password" name="password"><br>
+        年龄：<input type="number" name="age"><br>
+        邮箱：<input type="email">
+    </div>
+</body>
+</html>

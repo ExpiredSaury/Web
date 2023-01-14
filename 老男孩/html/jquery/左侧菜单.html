@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!---<script src="../jQuery-3.6.0-min.js"></script>--->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .left {
+            float: left;
+            background-color: darkgray;
+            width: 20%;
+            height: 100%;
+            position: fixed;
+        }
+
+        .title {
+            font-size: 36px;
+            color: white;
+            text-align: center;
+        }
+
+        .item {
+            border: 1px solid cadetblue;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="left">
+    <div class="menu">
+        <div class="title">菜单一
+            <div class="item">111</div>
+            <div class="item">222</div>
+            <div class="item">333</div>
+        </div>
+        <div class="title">菜单二
+            <div class="item">111</div>
+            <div class="item">222</div>
+            <div class="item">333</div>
+        </div>
+        <div class="title">菜单三
+            <div class="item">111</div>
+            <div class="item">222</div>
+            <div class="item">333</div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    $('title').click(function () {
+
+        $('.item').addClass('hide')
+        $(this).children().removeClass('hide')
+    })
+</script>
+</body>
+</html>
